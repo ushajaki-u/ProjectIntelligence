@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1050" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1600" height="1050" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <rect x="410" y="22" width="780" height="72" rx="14" fill="#10294A"/>
+  <text x="800" y="60" text-anchor="middle" font-size="30" font-weight="bold" fill="#FFFFFF">Inside the Delivery Forecast Engine</text>
+  <text x="800" y="84" text-anchor="middle" font-size="14" fill="#Bcd0e6" font-weight="bold">Deterministic &amp; explainable &#8212; every output traces back to Jira</text>
+
+  <!-- ============ LEFT: INPUTS ============ -->
+  <rect x="40" y="150" width="380" height="50" rx="10" fill="#14507E"/>
+  <text x="230" y="183" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">INPUTS</text>
+
+  <rect x="40" y="214" width="380" height="118" rx="10" fill="#E9F3FD" stroke="#CFE3F8"/>
+  <text x="66" y="248" font-size="20" font-weight="bold" fill="#1868DB">Jira</text>
+  <text x="66" y="274" font-size="14" fill="#55617A">Work items, status, estimates,</text>
+  <text x="66" y="294" font-size="14" fill="#55617A">start / end dates, dependencies,</text>
+  <text x="66" y="314" font-size="14" fill="#55617A">risks &amp; blockers, scope changes</text>
+
+  <rect x="40" y="346" width="380" height="118" rx="10" fill="#E9F5EE" stroke="#CFE8D9"/>
+  <text x="66" y="380" font-size="20" font-weight="bold" fill="#217A46">Project Schedule</text>
+  <text x="66" y="406" font-size="14" fill="#55617A">MPP / Excel or similar file;</text>
+  <text x="66" y="426" font-size="14" fill="#55617A">phases, milestones, baseline</text>
+  <text x="66" y="446" font-size="14" fill="#55617A">and target dates</text>
+
+  <rect x="40" y="478" width="380" height="118" rx="10" fill="#F1ECFB" stroke="#DFD3F6"/>
+  <text x="66" y="512" font-size="20" font-weight="bold" fill="#5B34C0">Configuration (config.json)</text>
+  <text x="66" y="538" font-size="14" fill="#55617A">Team locations, holidays,</text>
+  <text x="66" y="558" font-size="14" fill="#55617A">working calendars &amp; defaults</text>
+
+  <!-- arrow inputs -> engine -->
+  <line x1="430" y1="373" x2="548" y2="373" stroke="#7A8699" stroke-width="7"/>
+  <polygon points="548,360 574,373 548,386" fill="#7A8699"/>
+
+  <!-- ============ MIDDLE: ENGINE ============ -->
+  <rect x="588" y="150" width="424" height="842" rx="16" fill="#F7F4FD" stroke="#6B3FD1" stroke-width="2"/>
+  <rect x="588" y="150" width="424" height="56" rx="16" fill="#5B34C0"/>
+  <rect x="588" y="182" width="424" height="24" fill="#5B34C0"/>
+  <text x="800" y="186" text-anchor="middle" font-size="21" font-weight="bold" fill="#FFFFFF">Delivery Forecast Engine</text>
+
+  <!-- step template -->
+  <!-- 1 -->
+  <rect x="610" y="224" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="258" r="18" fill="#5B34C0"/>
+  <text x="645" y="265" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="678" y="258" font-size="18" font-weight="bold" fill="#2A1E57">Query &amp; Retrieve</text>
+  <text x="678" y="284" font-size="13.5" fill="#55617A">Label-driven JQL &#8594; Jira REST API</text>
+  <text x="678" y="304" font-size="13.5" fill="#55617A">&#8594; the full epic hierarchy</text>
+
+  <!-- 2 -->
+  <rect x="610" y="342" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="376" r="18" fill="#5B34C0"/>
+  <text x="645" y="383" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="678" y="376" font-size="18" font-weight="bold" fill="#2A1E57">Build Hierarchy</text>
+  <text x="678" y="402" font-size="13.5" fill="#55617A">Link parent &#8596; child up to 4 levels;</text>
+  <text x="678" y="422" font-size="13.5" fill="#55617A">set Done / Deprecated aside</text>
+
+  <!-- 3 -->
+  <rect x="610" y="460" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="494" r="18" fill="#5B34C0"/>
+  <text x="645" y="501" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="678" y="494" font-size="18" font-weight="bold" fill="#2A1E57">Roll Up Dates (bottom-up)</text>
+  <text x="678" y="520" font-size="13.5" fill="#55617A">Leaf = documented due date;</text>
+  <text x="678" y="540" font-size="13.5" fill="#55617A">parent = latest active child</text>
+
+  <!-- 4 -->
+  <rect x="610" y="578" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="612" r="18" fill="#2E9E5B"/>
+  <text x="645" y="619" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">4</text>
+  <text x="678" y="612" font-size="18" font-weight="bold" fill="#2A1E57">Data-Quality Gates</text>
+  <text x="678" y="638" font-size="13.5" fill="#55617A">Due-date coverage %, missing dates /</text>
+  <text x="678" y="658" font-size="13.5" fill="#55617A">labels, forecast confidence</text>
+
+  <!-- 5 -->
+  <rect x="610" y="696" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="730" r="18" fill="#2E9E5B"/>
+  <text x="645" y="737" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">5</text>
+  <text x="678" y="730" font-size="18" font-weight="bold" fill="#2A1E57">Epic Health Check</text>
+  <text x="678" y="756" font-size="13.5" fill="#55617A">Blocked &#183; backlog w/o dates &#183; near-</text>
+  <text x="678" y="776" font-size="13.5" fill="#55617A">release &#8212; kept separate from the date</text>
+
+  <!-- 6 -->
+  <rect x="610" y="814" width="380" height="104" rx="10" fill="#FFFFFF" stroke="#E3DAF7"/>
+  <circle cx="645" cy="848" r="18" fill="#5B34C0"/>
+  <text x="645" y="855" text-anchor="middle" font-size="18" font-weight="bold" fill="#FFFFFF">6</text>
+  <text x="678" y="848" font-size="18" font-weight="bold" fill="#2A1E57">Classify &amp; Decide</text>
+  <text x="678" y="874" font-size="13.5" fill="#55617A">Variance vs. Orange / Red thresholds</text>
+  <text x="678" y="894" font-size="13.5" fill="#55617A">&#8594; on track, or not</text>
+
+  <!-- arrow engine -> output -->
+  <line x1="1022" y1="373" x2="1140" y2="373" stroke="#7A8699" stroke-width="7"/>
+  <polygon points="1140,360 1166,373 1140,386" fill="#7A8699"/>
+
+  <!-- ============ RIGHT: OUTPUT ============ -->
+  <rect x="1180" y="150" width="380" height="50" rx="10" fill="#1E7A46"/>
+  <text x="1370" y="183" text-anchor="middle" font-size="22" font-weight="bold" fill="#FFFFFF">OUTPUT</text>
+
+  <rect x="1180" y="214" width="380" height="150" rx="10" fill="#E7F4EC" stroke="#BFE3CD"/>
+  <text x="1370" y="258" text-anchor="middle" font-size="20" font-weight="bold" fill="#15603A">Can the project meet</text>
+  <text x="1370" y="284" text-anchor="middle" font-size="20" font-weight="bold" fill="#15603A">the target date?</text>
+  <text x="1370" y="328" text-anchor="middle" font-size="16" font-weight="bold" fill="#217A46">YES / NO  +  confidence level</text>
+
+  <rect x="1180" y="384" width="380" height="124" rx="10" fill="#FFFFFF" stroke="#CFE8D9"/>
+  <text x="1206" y="420" font-size="18" font-weight="bold" fill="#1F2A44">Excel Audit Trail</text>
+  <text x="1206" y="446" font-size="13.5" fill="#55617A">Full hierarchy, documented vs.</text>
+  <text x="1206" y="466" font-size="13.5" fill="#55617A">calculated dates, forecast status,</text>
+  <text x="1206" y="486" font-size="13.5" fill="#55617A">and data-quality / health flags</text>
+
+  <rect x="1180" y="524" width="380" height="124" rx="10" fill="#FFFFFF" stroke="#CFE8D9"/>
+  <text x="1206" y="560" font-size="18" font-weight="bold" fill="#1F2A44">2-Slide Executive Deck</text>
+  <text x="1206" y="586" font-size="13.5" fill="#55617A">&#8220;Are we on track?&#8221;, forecast date</text>
+  <text x="1206" y="606" font-size="13.5" fill="#55617A">vs. target, epic progress, and the</text>
+  <text x="1206" y="626" font-size="13.5" fill="#55617A">exceptions that need attention</text>
+
+  <!-- footer -->
+  <text x="800" y="1028" text-anchor="middle" font-size="14" fill="#7A8699">Steps 4 &amp; 5 are the trust layer &#8212; the engine reports how much to trust the answer, not just the date. No AI: deterministic rules, end to end.</text>
+</svg>

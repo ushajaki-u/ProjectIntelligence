@@ -91,6 +91,16 @@ Two deliberate design rules keep it trustworthy:
 
 ---
 
+## How It Works
+
+From three inputs — Jira, an optional project schedule, and a configuration file — the engine runs a fixed, six-step deterministic pipeline and ends with one decision: **can the project meet its target date?**
+
+![Inside the Delivery Forecast Engine](images/how-it-works.svg)
+
+Steps 4 and 5 are the **trust layer**: the engine reports *how much confidence* to place in the answer — not just a date. There is no AI in this path; it is rules and math, end to end.
+
+---
+
 ## Why Deterministic First — and Why That's a Feature
 
 A fair question: *"Isn't this an AI project?"* Eventually. Not yet — and that's a deliberate design decision.
