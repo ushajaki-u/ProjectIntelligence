@@ -18,7 +18,7 @@ A program manager on a modern software program is asked a simple question in eve
 
 Answering it honestly means a single person manually digesting an overwhelming, scattered pile of data — and then applying a stack of rules in their head — **over and over, every time anything changes.**
 
-![The complexity of modern program delivery](docs/complexity-infographic.jpg)
+![The complexity of modern program delivery](images/complexity-infographic.jpg)
 
 ### 1. The scale a PM must hold in their head
 
@@ -29,7 +29,7 @@ A representative large automotive program looks like this:
 - **Multi-year delivery lifecycles** across **4+ levels** of Jira hierarchy (Epic → Story → Task → Sub-task)
 - A **globally distributed workforce** — USA, India, Mexico — each with its own holiday and vacation calendars
 
-![An automotive infotainment program — one customer PRD explodes into workstreams, software domains, and dozens of features: the hierarchy a single PM must track, roll up, and keep current](docs/program-structure.png)
+![An automotive infotainment program — one customer PRD explodes into workstreams, software domains, and dozens of features: the hierarchy a single PM must track, roll up, and keep current](images/program-structure.png)
 
 ### 2. The scattered inputs a PM must ingest — daily
 
@@ -160,9 +160,10 @@ This is **not** trying to out-schedule Jira. It's the **last-mile trust-and-hygi
 |---|---|
 | `README.md` | This overview — the problem, the rules, the roadmap |
 | `BUSINESS_RULES.md` | The 26-rule register (17 forecast + 9 Epic-health) |
-| `docs/` | Diagrams |
+| `images/` | Diagrams |
+| `code/` | The deterministic forecasting engine *(coming soon)* |
 
-*The deterministic engine, a sanitized configuration template, and the full design deck (journey, HLD/LLD, roadmap) will be added as the repository is built out.*
+*The engine, a sanitized configuration template, and the full design deck (journey, HLD/LLD, roadmap) will be added to `code/` as the repository is built out.*
 
 ---
 
