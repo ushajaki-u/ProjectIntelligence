@@ -65,7 +65,7 @@ The current-state reality, step by step:
 - **Require minimum due-date coverage** — below the threshold, say *"Insufficient Data,"* don't fake a forecast *(BR-08, BR-13)*
 - **Flag a "Done" Epic that still has active children** as a data issue, not a green light *(BR-04)*
 
-> The full register — **17 forecast rules + 9 Epic-health rules** — lives in [`Project_Forecaster_Business_Rules.xlsx`](./Project_Forecaster_Business_Rules_v5_7.xlsx).
+> The full register — **17 forecast rules + 9 Epic-health rules** — lives in [**Business Rules**](./BUSINESS_RULES.md).
 
 This is the core thesis: **before you can predict project health, you need a trustworthy, explainable definition of what "on track" even means.** This engine *is* that definition.
 
@@ -159,7 +159,7 @@ This is **not** trying to out-schedule Jira. It's the **last-mile trust-and-hygi
 | File | Purpose |
 |---|---|
 | `README.md` | This overview — the problem, the rules, the roadmap |
-| `Project_Forecaster_Business_Rules_v5_7.xlsx` | The 26-rule register (17 forecast + 9 Epic-health) |
+| `BUSINESS_RULES.md` | The 26-rule register (17 forecast + 9 Epic-health) |
 | `docs/` | Diagrams |
 
 *The deterministic engine, a sanitized configuration template, and the full design deck (journey, HLD/LLD, roadmap) will be added as the repository is built out.*
