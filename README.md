@@ -1,15 +1,5 @@
 # Project Intelligence
 
-### A Delivery Forecasting Platform for Complex Programs
-
-> *"The system should work for us — we shouldn't work for the system."*
-
-**What this is:** A deterministic, explainable engine that answers one deceptively simple question for a large, multi-team program — **"Can we still meet our target date?"** — and shows its work, every time.
-
-**What it is *not* (yet):** An AI product. Version 1 is intentionally rules-based and fully auditable. AI is the *destination* (the platform's north star, **PulseAI**), not the starting point — and this README explains exactly why.
-
----
-
 ## The Problem: One Question, an Impossible Amount of Data
 
 A program manager on a modern software program is asked a simple question in every status meeting:
@@ -19,6 +9,8 @@ A program manager on a modern software program is asked a simple question in eve
 Answering it honestly means a single person manually digesting an overwhelming, scattered pile of data — and then applying a stack of rules in their head — **over and over, every time anything changes.**
 
 ![The complexity of modern program delivery](images/complexity-infographic.jpeg)
+![Inside the Delivery Forecast Engine](images/DeliveryForecastingPlatformInfographic.png)
+
 
 ### 1. The scale a PM must hold in their head
 
@@ -26,8 +18,8 @@ A representative large automotive program looks like this:
 
 - **40–50+ parallel Scrum teams** across HW, SW, HMI, Audio, Navigation, QA, and Systems
 - **500,000+ requirements** and **1,000+ specifications**
-- **Multi-year delivery lifecycles** across **4+ levels** of Jira hierarchy (Epic → Story → Task → Sub-task)
-- A **globally distributed workforce** — USA, India, Mexico — each with its own holiday and vacation calendars
+- **Multi-year delivery lifecycles** across **4+ levels** of  hierarchy (Epic → Feature → Story → Task → Sub-task)
+- A **globally distributed workforce** — USA, India, Mexico ,China, Germany, — each with its own holiday and vacation calendars
 
 ![An automotive infotainment program — one customer PRD explodes into workstreams, software domains, and dozens of features: the hierarchy a single PM must track, roll up, and keep current](images/program-structure.png)
 
@@ -91,14 +83,16 @@ Two deliberate design rules keep it trustworthy:
 
 ---
 
-## How It Works
+## How It Works -TODAY
 
 From three inputs — Jira, an optional project schedule, and a configuration file — the engine runs a fixed, six-step deterministic pipeline and ends with one decision: **can the project meet its target date?**
 
-![Inside the Delivery Forecast Engine](images/DeliveryForecastingPlatformInfographic.png)
+![Inside the Delivery Forecast Engine](images/how-it-works.svg)
 
 
-Steps 4 and 5 are the **trust layer**: the engine reports *how much confidence* to place in the answer — not just a date. There is no AI in this path; it is rules and math, end to end.
+
+
+Steps 4 and 5 are the **trust layer**: the engine reports *how much confidence* to place in the answer — not just a date. There is no AI in this path (YET); it is rules and math, end to end.
 
 ---
 
