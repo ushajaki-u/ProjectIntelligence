@@ -8,7 +8,7 @@ A program manager on a modern software program is asked a simple question in eve
 
 Answering it honestly means a single person manually digesting an overwhelming, scattered pile of data — and then applying a stack of rules in their head — **over and over, every time anything changes.**
 
-![The complexity of modern program delivery](images/complexity-infographic.jpeg)
+![The complexity of modern program delivery](images/complexity-infographic.png)
 ![Inside the Delivery Forecast Engine](images/DeliveryForecastingPlatformInfographic.png)
 
 
