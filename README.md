@@ -93,15 +93,34 @@ and Epic-health rules.
 
 ## Dependencies & limitations
 
-Jira is the current work-item data source; program schedules and
-operational context are supplied separately through external
-configuration. Forecast quality depends on the completeness and
-accuracy of both sources.
+Project Intelligence depends on the availability, completeness,
+accuracy, and consistency of data from its connected sources.
 
-API availability, access permissions, and changes to the underlying
-platform can affect the integration. Supporting other work management
-systems will require additional connectors and validation against each
-system's data model.
+- **Work management data:** Jira is the current source for work items,
+  hierarchy, status, ownership, and due dates. Data quality and team
+  practices can vary, affecting the reliability of downstream analysis.
+- **External program context:** Program schedules, milestones, team
+  assignments, global locations, working calendars, holidays, and
+  forecasting parameters are maintained separately. These inputs must
+  be kept aligned with actual program conditions.
+- **Integration reliability:** API availability, access permissions,
+  rate limits, synchronization delays, and changes to source-system
+  APIs or data models can affect data ingestion and processing.
+- **Platform dependency:** The current implementation is designed
+  around Jira's data model. Supporting other work management systems
+  will require additional connectors, data mapping, and validation.
+
+**Design principle:** Project Intelligence should not blindly assume
+that source data is complete or authoritative. It should validate
+available information, surface gaps and inconsistencies, communicate
+limitations, and make the basis of its forecasts transparent.
+
+The system should distinguish between a project that is genuinely
+healthy, one that appears healthy because its underlying data is
+incomplete, and one whose health cannot be reliably assessed because
+the available evidence is insufficient. In the latter case, it should
+report **"Insufficient data to assess"** rather than produce a
+misleading forecast.
 
 ------------------------------------------------------------------------
 
