@@ -13,6 +13,10 @@ of Jira and, eventually, other work management systems. It combines
 work-item data with external program context to make delivery
 forecasting, data-quality checks, and executive reporting easier.
 
+**Project Intelligence goes beyond displaying project status. It analyzes
+work-item data and program context to surface delivery risks, data gaps,
+and forecast insights that may otherwise remain hidden across teams.**
+
 *An applied data science project grounded in real program-delivery
 challenges.*
 
@@ -28,7 +32,7 @@ delivery](images/complexity-infographic.png)
                                       date?
 
   **Data quality & planning           Can we trust the work-item data?
-  integrity**                         
+  integrity**
 
   **Epic health**                     What active work, blockers, or
                                       planning gaps need attention?
