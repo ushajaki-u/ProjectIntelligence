@@ -24,6 +24,7 @@ The following sequence will guide the work. We will complete and add each part i
 
 ---
 
+
 ## Step 1 — Problem Discovery & User Research
 
 ### 1.1 Initial user context
@@ -35,6 +36,12 @@ The program/project manager needs to be able to understand and communicate where
 This is an initial perspective, not yet a validated statement about all project managers.
 
 ### 1.2 Current user journey — before solution
+
+<p align="center">
+  <img src="./images/Project%20Intelligence%20User%20Journey.png"
+       alt="Project Intelligence User Journey"
+       width="85%">
+</p>
 
 |  | **1. Manage Multiple Projects** | **2. Collect Execution Updates** | **3. Gather Schedule & Milestone Information** |
 |---|---|---|---|
