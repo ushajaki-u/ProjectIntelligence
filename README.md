@@ -8,17 +8,21 @@ Large programs generate enormous amounts of work-item data. Turning that
 data into a reliable delivery forecast still requires significant manual
 effort.
 
-Project Intelligence is a program-level intelligence layer built on top
-of Jira and, eventually, other work management systems. It combines
-work-item data with external program context to make delivery
-forecasting, data-quality checks, and executive reporting easier.
+Project Intelligence is a program-level delivery analytics solution
+that combines work-item data from systems such as Jira with external
+program schedules and context—including program start and end dates,
+milestones, team assignments, global locations, working calendars, and
+holidays.
 
 **Project Intelligence goes beyond displaying project status. It analyzes
 work-item data and program context to surface delivery risks, data gaps,
 and forecast insights that may otherwise remain hidden across teams.**
 
-*An applied data science project grounded in real program-delivery
-challenges.*
+*The current foundation is data integration, data engineering,
+deterministic calculations, and configurable business rules. Future
+exploration may include descriptive and predictive analytics,
+machine learning, and AI-assisted insights, guided by data availability
+and demonstrated business value.*
 
 ![The complexity of modern program
 delivery](images/complexity-infographic.png)
@@ -53,8 +57,9 @@ Project Intelligence combines two sources:
 
 -   **Work management system (currently Jira):** work items, hierarchy,
     status, ownership, and due dates.
--   **External program configuration:** program dates, milestones,
-    holidays, team calendars, availability, and forecasting parameters.
+-   **External program configuration:** program start and end dates,
+    milestones, team assignments, global locations, working calendars,
+    holidays, availability, and forecasting parameters.
 
 The deterministic engine validates the data, applies configurable
 business rules, and produces explainable program-level insights.
@@ -69,7 +74,8 @@ business rules, and produces explainable program-level insights.
 ## Why deterministic first?
 
 Start with transparent, testable business rules. Explore AI/ML only when
-sufficient historical data is available to support better predictions.
+sufficient historical data is available and when those methods can
+demonstrate value beyond the deterministic baseline.
 
 See [Business Rules](./BUSINESS_RULES.md) for the current forecasting
 and Epic-health rules.
@@ -87,16 +93,18 @@ and Epic-health rules.
 
 ## Dependencies & limitations
 
-The current implementation relies on Jira as its work-item data source.
-Forecast quality depends on the completeness and accuracy of that data.
-API availability, access permissions, and changes to the underlying
-platform can affect the integration.
+Jira is the current work-item data source; program schedules and
+operational context are supplied separately through external
+configuration. Forecast quality depends on the completeness and
+accuracy of both sources.
 
-Supporting other work management systems will require additional
-connectors and validation against each system's data model.
+API availability, access permissions, and changes to the underlying
+platform can affect the integration. Supporting other work management
+systems will require additional connectors and validation against each
+system's data model.
 
 ------------------------------------------------------------------------
 
-**Project Intelligence doesn't replace the system that manages the work.
-It makes the data in that system more useful for program-level
-decisions.**
+**Project Intelligence doesn't replace the systems that manage the work
+and program schedule. It makes information from those sources more
+useful for program-level decisions.**
