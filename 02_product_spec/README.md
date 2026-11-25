@@ -37,8 +37,9 @@ This is an initial perspective, not yet a validated statement about all project 
 
 ### 1.2 Current user journey — before solution
 
+
 <p align="center">
-  <img src="./images/Project%20Intelligence%20User%20Journey.png"
+  <img src="../images/Project%20Intelligence%20User%20Journey.png"
        alt="Project Intelligence User Journey"
        width="85%">
 </p>
