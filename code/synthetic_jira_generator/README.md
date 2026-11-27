@@ -5,7 +5,7 @@ based on configurable project scenarios. It provides a controlled
 dataset for evaluating Project Pulse's forecasting capabilities
 and validating its automation workflows.
 
-![Project Pulse - Synthetic Jira Data Generator](images/project-pulse-synthetic-data-generator.png)
+![How the synthetic dataset is generated](images/how-the-dataset-is-generated.png)
 
 ### How It Works
 
@@ -26,8 +26,6 @@ data, including work items, delivery attributes, and dependencies.
 The generated data is available as an Excel preview with a
 validation summary. It can also optionally be loaded into a
 Jira test project.
-
-![How the synthetic dataset is generated](images/how-the-dataset-is-generated.png)
 
 ### How to Run
 
