@@ -1,10 +1,10 @@
-# Project Intelligence — Product Discovery & PRD
+# Project Pulse — Product Discovery & PRD
 
 > **Working document:** This PRD will be developed incrementally using the seven-step product-discovery approach documented in the Codebasics Digital Asset Assistant capstone. Sections will be added and refined as discovery progresses. This document records the current understanding; it does not assume that the proposed solution or technology has already been validated.
 
 ## Product context
 
-Project Intelligence is an exploration of how work-item data and external program information might be brought together to help a program/project manager understand and communicate the current delivery position across multiple projects.
+Project Pulse is an exploration of how work-item data and external program information might be brought together to help a program/project manager understand and communicate the current delivery position across multiple projects.
 
 **Current discovery status:** Initial current-state user journey documented from the product owner's personal experience. Other users' experiences and the broader problem hypothesis have not yet been validated.
 
@@ -40,7 +40,7 @@ This is an initial perspective, not yet a validated statement about all project 
 
 <p align="center">
   <img src="../images/Project%20Intelligence%20User%20Journey.png"
-       alt="Project Intelligence User Journey"
+       alt="Project Pulse User Journey"
        width="85%">
 </p>
 

@@ -1,4 +1,4 @@
-# Project Intelligence
+# Project Pulse
 
 ### From work-item data to program-level delivery intelligence
 
@@ -8,13 +8,13 @@ Large programs generate enormous amounts of work-item data. Turning that
 data into a reliable delivery forecast still requires significant manual
 effort.
 
-Project Intelligence is a program-level delivery analytics solution
+Project Pulse is a program-level delivery analytics solution
 that combines work-item data from systems such as Jira with external
 program schedules and context—including program start and end dates,
 milestones, team assignments, global locations, working calendars, and
 holidays.
 
-**Project Intelligence goes beyond displaying project status. It analyzes
+**Project Pulse goes beyond displaying project status. It analyzes
 work-item data and program context to surface delivery risks, data gaps,
 and forecast insights that may otherwise remain hidden across teams.**
 
@@ -46,14 +46,14 @@ delivery](images/complexity-infographic.png)
 
 A parent marked Done while its children remain active, missing or
 overdue due dates, and inconsistent status/date information can distort
-a forecast. Project Intelligence surfaces these issues rather than
+a forecast. Project Pulse surfaces these issues rather than
 blindly trusting the hierarchy.
 
 ## How it works
 
 ![Inside the Delivery Forecast Engine](images/how-it-works.svg)
 
-Project Intelligence combines two sources:
+Project Pulse combines two sources:
 
 -   **Work management system (currently Jira):** work items, hierarchy,
     status, ownership, and due dates.
@@ -93,7 +93,7 @@ and Epic-health rules.
 
 ## Dependencies & limitations
 
-Project Intelligence depends on the availability, completeness,
+Project Pulse depends on the availability, completeness,
 accuracy, and consistency of data from its connected sources.
 
 - **Work management data:** Jira is the current source for work items,
@@ -110,7 +110,7 @@ accuracy, and consistency of data from its connected sources.
   around Jira's data model. Supporting other work management systems
   will require additional connectors, data mapping, and validation.
 
-**Design principle:** Project Intelligence should not blindly assume
+**Design principle:** Project Pulse should not blindly assume
 that source data is complete or authoritative. It should validate
 available information, surface gaps and inconsistencies, communicate
 limitations, and make the basis of its forecasts transparent.
@@ -124,6 +124,6 @@ misleading forecast.
 
 ------------------------------------------------------------------------
 
-**Project Intelligence doesn't replace the systems that manage the work
+**Project Pulse doesn't replace the systems that manage the work
 and program schedule. It makes information from those sources more
 useful for program-level decisions.**

@@ -1,4 +1,4 @@
-# Project Intelligence — Forecast Engine
+# Project Pulse — Forecast Engine
 
 A deterministic, explainable delivery-forecasting engine. It reads a program's
 Epic hierarchy from Jira, rolls up dates bottom-up, classifies schedule

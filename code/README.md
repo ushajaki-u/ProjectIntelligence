@@ -1,6 +1,6 @@
 # Code
 
-Working proof-of-concept code for Project Intelligence. Two independent parts:
+Working proof-of-concept code for Project Pulse. Two independent parts:
 
 | Folder | What it is |
 |---|---|
