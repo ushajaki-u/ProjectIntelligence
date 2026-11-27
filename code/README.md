@@ -1,10 +1,18 @@
 # Code
 
-The deterministic forecasting engine will live here.
+Working proof-of-concept code for Project Intelligence. Two independent parts:
 
-Planned contents:
+| Folder | What it is |
+|---|---|
+| [`project_intelligence/`](project_intelligence/) | The deterministic **forecast engine** — reads Jira, rolls up dates, classifies variance and Epic health, and produces a color-coded Excel audit + executive PowerPoint. |
+| [`synthetic_jira_generator/`](synthetic_jira_generator/) | A **test-data generator** that builds a realistic synthetic program (with embedded data-quality test cases) and can load it into a test Jira — the harness used to validate the engine. |
 
-- **`project_forecaster.py`** — the engine: Jira hierarchy extraction, recursive date roll-up, data-quality gates, Epic Health Check, and the Excel + executive-deck outputs.
-- **`config.example.json`** — a configuration template with placeholder values.
+> **Note:** this is a proof of concept built ahead of the full product-discovery
+> steps. The governing rules it implements are in
+> [`../BUSINESS_RULES.md`](../BUSINESS_RULES.md).
 
-> **Security note:** the real configuration file (containing a Jira URL, email, and API token) is **never** committed. A `.gitignore` will keep it out of version control, and only the sanitized `config.example.json` is shared here.
+## Security
+
+Credentials live only in local `config.json` / `synthetic_project_config.json`
+files, which are **git-ignored**. Only the `*.example.json` templates
+(placeholders) are tracked. Never commit a real API token.

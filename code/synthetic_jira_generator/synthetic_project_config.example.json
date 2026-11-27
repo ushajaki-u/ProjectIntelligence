@@ -1,0 +1,224 @@
+{
+  "generator": {
+    "version": "2.0",
+    "random_seed": 2027
+  },
+  "jira": {
+    "project_key": "PF",
+    "base_url": "https://your-site.atlassian.net",
+    "email": "your-email@example.com",
+    "api_token": "PASTE_API_TOKEN_HERE",
+    "request_timeout_seconds": 60,
+    "pause_between_requests_seconds": 0.15
+  },
+  "project": {
+    "name": "Synthetic Global Program",
+    "start_date": "2026-01-01",
+    "end_date": "2027-12-31",
+    "snapshot_date": "2027-07-15"
+  },
+  "teams": [
+    {
+      "name": "Team 1",
+      "country": "USA"
+    }
+  ],
+  "work_types": {
+    "epic": "Epic",
+    "story": "Story",
+    "bug": "Bug",
+    "subtask": "Subtask"
+  },
+  "jira_fields": {
+    "summary": "Summary",
+    "parent": "Parent",
+    "status": "Status",
+    "delivery_team": "Delivery Team",
+    "actual_start": "Actual Start",
+    "due_date": "Due Date",
+    "original_estimate": "Original Estimate",
+    "priority": "Priority",
+    "labels": "Labels",
+    "assignee": "Assignee",
+    "reporter": "Reporter"
+  },
+  "ticket_counts": {
+    "epics_per_team": 10,
+    "stories_per_epic": 5,
+    "subtasks_per_story": 3,
+    "bugs_per_epic": 3,
+    "subtasks_per_bug": 0
+  },
+  "quarters": [
+    {
+      "name": "Q1",
+      "label": "Q1",
+      "start_date": "2027-01-01",
+      "end_date": "2027-03-31"
+    },
+    {
+      "name": "Q2",
+      "label": "Q2",
+      "start_date": "2027-04-01",
+      "end_date": "2027-06-30"
+    },
+    {
+      "name": "Q3",
+      "label": "Q3",
+      "start_date": "2027-07-01",
+      "end_date": "2027-09-30"
+    },
+    {
+      "name": "Q4",
+      "label": "Q4",
+      "start_date": "2027-10-01",
+      "end_date": "2027-12-31"
+    }
+  ],
+  "milestones": [
+    {
+      "name": "Q1 Milestone",
+      "date": "2027-03-31",
+      "quarter": "Q1",
+      "deliverable_count": 3
+    },
+    {
+      "name": "Q2 Milestone",
+      "date": "2027-06-30",
+      "quarter": "Q2",
+      "deliverable_count": 3
+    },
+    {
+      "name": "Q3 Milestone",
+      "date": "2027-09-30",
+      "quarter": "Q3",
+      "deliverable_count": 3
+    },
+    {
+      "name": "Q4 Milestone",
+      "date": "2027-12-15",
+      "quarter": "Q4",
+      "deliverable_count": 3
+    },
+    {
+      "name": "Final Demo",
+      "date": "2027-12-31",
+      "quarter": "Q4",
+      "deliverable_count": 1
+    }
+  ],
+  "estimates": {
+    "unit": "days",
+    "subtask": {
+      "minimum_days": 1,
+      "maximum_days": 15
+    },
+    "bug": {
+      "minimum_days": 1,
+      "maximum_days": 10
+    }
+  },
+  "field_percentages": {
+    "Q1": {
+      "has_actual_start": 98,
+      "has_due_date": 95,
+      "has_original_estimate": 98
+    },
+    "Q2": {
+      "has_actual_start": 95,
+      "has_due_date": 90,
+      "has_original_estimate": 95
+    },
+    "Q3": {
+      "has_actual_start": 80,
+      "has_due_date": 70,
+      "has_original_estimate": 85
+    },
+    "Q4": {
+      "has_actual_start": 50,
+      "has_due_date": 40,
+      "has_original_estimate": 65
+    }
+  },
+  "status_percentages": {
+    "Q1": {
+      "Done": 75,
+      "In Progress": 12,
+      "Blocked": 5,
+      "To Do": 3,
+      "Backlog": 3,
+      "Deprecated": 2
+    },
+    "Q2": {
+      "Done": 40,
+      "In Progress": 30,
+      "Blocked": 7,
+      "To Do": 8,
+      "Backlog": 12,
+      "Deprecated": 3
+    },
+    "Q3": {
+      "Done": 15,
+      "In Progress": 30,
+      "Blocked": 7,
+      "To Do": 15,
+      "Backlog": 30,
+      "Deprecated": 3
+    },
+    "Q4": {
+      "Done": 2,
+      "In Progress": 10,
+      "Blocked": 5,
+      "To Do": 20,
+      "Backlog": 60,
+      "Deprecated": 3
+    }
+  },
+  "past_due_percentages": {
+    "Q1": 15,
+    "Q2": 10,
+    "Q3": 4,
+    "Q4": 0
+  },
+  "epic_priority_percentages": {
+    "Highest": 10,
+    "High": 20,
+    "Medium": 40,
+    "Low": 20,
+    "Lowest": 10
+  },
+  "dependencies": {
+    "enabled": false,
+    "number_of_epics_with_dependencies": 0,
+    "link_type": "Blocks",
+    "minimum_lag_days": 0,
+    "maximum_lag_days": 10,
+    "allow_cycles": false
+  },
+  "test_cases": {
+    "missing_due_date": 1,
+    "missing_actual_start": 1,
+    "missing_estimate": 1,
+    "missing_delivery_team": 0,
+    "done_parent_with_active_child": 1,
+    "active_parent_with_all_children_done": 1,
+    "start_date_after_due_date": 1
+  },
+  "validation": {
+    "require_unique_ids": true,
+    "require_valid_parent": true,
+    "require_valid_team": true,
+    "require_valid_quarter": true,
+    "require_milestones_within_project_dates": true,
+    "require_chronological_milestones": true,
+    "require_status_percentages_total_100": true,
+    "require_priority_percentages_total_100": true
+  },
+  "output": {
+    "generate_excel": true,
+    "excel_file": "synthetic_project.xlsx",
+    "load_to_jira": false,
+    "jira_mapping_file": "jira_created_items.json",
+    "failed_items_file": "jira_failed_items.json"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "jira": {
+    "base_url": "https://your-site.atlassian.net",
+    "email": "your-email@example.com",
+    "api_token": "PASTE_API_TOKEN_HERE"
+  },
+  "project": {
+    "project_key": "YOUR_PROJECT_KEY",
+    "labels": ["your-label-1", "your-label-2"],
+    "delivery_date": "2027-12-31"
+  },
+  "query": {
+    "max_results": 100
+  },
+  "fields": [
+    "summary",
+    "status",
+    "assignee",
+    "components",
+    "startdate",
+    "duedate",
+    "issuetype",
+    "parent"
+  ],
+  "forecasting": {
+    "max_depth": 4,
+    "excluded_statuses": ["Done", "Deprecated"],
+    "orange_threshold_days": 7,
+    "red_threshold_days": 14,
+    "minimum_due_date_coverage_percent": 70
+  },
+  "epic_health_check": {
+    "enabled": true,
+    "blocked_statuses": ["Blocked"],
+    "backlog_statuses": ["Backlog"],
+    "backlog_release_warning_days": 14
+  },
+  "holiday_warnings": {
+    "enabled": true,
+    "warning_days": 14
+  },
+  "locations": {
+    "US": {
+      "name": "United States",
+      "holidays": [
+        {"name": "New Year's Day", "date": "2027-01-01"},
+        {"name": "Independence Day", "date": "2027-07-03"},
+        {"name": "Thanksgiving", "date": "2027-11-25"},
+        {"name": "Thanksgiving", "date": "2027-11-26"}
+      ]
+    },
+    "INDIA": {
+      "name": "India",
+      "holidays": [
+        {"name": "Republic Day", "date": "2027-01-26"},
+        {"name": "Independence Day", "date": "2027-08-15"},
+        {"name": "Diwali", "date": "2027-10-29"}
+      ]
+    },
+    "UNKNOWN": {
+      "name": "Unknown",
+      "holidays": []
+    }
+  },
+  "team_locations": {
+    "Doe, Jane": "US",
+    "Kumar, Arjun": "INDIA",
+    "Smith, John": "US"
+  },
+  "output": {
+    "excel_file": "project_forecast_report.xlsx",
+    "pptx_file": "project_forecast_executive_summary.pptx"
+  }
+}

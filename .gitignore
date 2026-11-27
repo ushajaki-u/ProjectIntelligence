@@ -1,0 +1,26 @@
+# Real configs with credentials — NEVER commit these (only *.example.json is tracked)
+config.json
+code/project_intelligence/config.json
+synthetic_project_config.json
+code/synthetic_jira_generator/synthetic_project_config.json
+**/config_v*.json
+
+# Generated outputs
+*.xlsx
+*.pptx
+jira_created_items*.json
+jira_failed_items*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+pylib/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
