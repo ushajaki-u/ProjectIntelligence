@@ -39,8 +39,8 @@ This is an initial perspective, not yet a validated statement about all project 
 
 
 <p align="center">
-  <img src="../images/Project%20Intelligence%20User%20Journey.png"
-       alt="Project Pulse User Journey"
+  <img src="https://raw.githubusercontent.com/ushajaki-u/ProjectPulse/main/images/complexity-infographic.jpg"
+       alt="Project Pulse — Current User Journey"
        width="85%">
 </p>
 
